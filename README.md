@@ -1,3 +1,5 @@
+This repo is no longer maintained, and doesn't work anymore. Sorry.
+
 # persistent_enums [![Build Status](https://travis-ci.org/yglukhov/persistent_enums.svg?branch=master)](https://travis-ci.org/yglukhov/persistent_enums)
 Define enums which values preserve their binary representation upon inserting or reordering
 
