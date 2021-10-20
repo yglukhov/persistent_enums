@@ -1,11 +1,9 @@
-This repo is no longer maintained, and doesn't work anymore. Sorry.
-
 # persistent_enums [![Build Status](https://travis-ci.org/yglukhov/persistent_enums.svg?branch=master)](https://travis-ci.org/yglukhov/persistent_enums)
 Define enums which values preserve their binary representation upon inserting or reordering
 
 ```nim
 # Imagine you have the following enum
-type MyEnum* = persistentEnum do:
+type MyEnum* {.persistent.} = enum
     myFirstValue = 0
     mySecondValue
 
@@ -15,7 +13,7 @@ writeInt16ToSomewhere(cast[ptr int16](addr serializedVal))
 ```
 ```nim
 # Then next version of your app may add more values to the enum, e.g.
-type MyEnum* = persistentEnum do:
+type MyEnum* {.persistent.} = enum
     myFirstValue = 0
     myNewlyInsertedValue
     mySecondValue

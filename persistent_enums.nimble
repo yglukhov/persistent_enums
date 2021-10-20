@@ -7,5 +7,4 @@ license       = "MIT"
 
 # Dependencies
 
-requires "nim >= 0.13.1"
-
+requires "nim >= 1.6"
